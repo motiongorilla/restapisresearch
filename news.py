@@ -28,7 +28,7 @@ def request_data(url):
     return content
 
 def main():
-    url = construct_request(["microsoft", "games", "sell"], "2024-02-18", "relevancy", API_KEY)
+    url = construct_request(["nintendo", "games", "announce"], "2024-02-18", "relevancy", API_KEY)
     data = request_data(url)
     # print(data["totalResults"])
     for article in data["articles"]:
